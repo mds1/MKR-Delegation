@@ -1,0 +1,17 @@
+{
+  "name": "mkr-delegation",
+  "version": "0.0.1",
+  "description": "Delegate your MKR voting power",
+  "main": "index.js",
+  "scripts": {
+    "ganache": "source .env && ganache-cli -d -f https://mainnet.infura.io/v3/$INFURA_ID -u $EXCHANGE_ADDRESS -u $WETH_HOLDER_ADDRESS",
+    "test": "source .env && npx truffle test"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "@openzeppelin/contracts": "^3.0.0-rc.0",
+    "solhint": "^2.3.1"
+  }
+}
